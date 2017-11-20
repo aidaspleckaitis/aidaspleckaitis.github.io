@@ -1,4 +1,50 @@
 .jumbotron {
 	background: url("images/bg-3.jpg") no-repeat center center;
 	background-size: cover;
+	color: white;
+	margin-bottom: 0;
+	align-content: left;
+}
+
+.section {
+	color: black;
+	font-size: 30px;
+	font-weight: 200;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+strong {
+	font-size: 20px;
+	text-align: center;
+}
+
+.control {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.material-icons {
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+hr {
+	border-top: 1px solid lightgrey;
+	width: 20%;
+}
+
+.portfolio {
+	background-color: #f4f4f4;
+}
+
+.blackhr {
+	border-top: 1px solid lightgrey;
+	width: 20%;
+}
+
+.col-form-label {
+	padding-top: 0;
 }
