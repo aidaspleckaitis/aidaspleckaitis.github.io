@@ -9,7 +9,7 @@
 .section {
 	color: black;
 	font-size: 30px;
-	font-weight: 200;
+	font-weight: 300;
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 20px;
@@ -19,6 +19,7 @@
 strong {
 	font-size: 20px;
 	text-align: center;
+	font-weight: 400;
 }
 
 .control {
