@@ -1,16 +1,16 @@
 "use strict";
 
 let app = new Vue({
-	el: "#app",
-	data: {
-		title: "Road to Junior",
-		selected: "",
-		questionIndex: 0,
-		answeredC: 'answered',
-		unansweredC: 'unAnswered',
-		questions: [
+  el: "#app",
+  data: {
+    title: "Road to Junior",
+    selected: "",
+    questionIndex: 0,
+    answeredC: 'answered',
+    unansweredC: 'unAnswered',
+    questions: [
           {
-            text: "Describe <script async>.",
+            question: "Describe <script async>.",
             id: 0,
             points: 100,
             responses: [
@@ -20,7 +20,7 @@ let app = new Vue({
               {text: "It makes a script get fetched and executed immediately, before the browser continues parsing the page.", answer: false}
             ]
           }, {
-            text: "Could you explain what is 'normalizing' CSS?",
+            question: "Could you explain what is 'normalizing' CSS?",
             id: 1,
             points: 200,
             responses: [
@@ -30,7 +30,7 @@ let app = new Vue({
               {text: 'It is a short, often compressed (minified) set of CSS rules that resets the styling of all HTML elements to a consistent baseline.', answer: false}, 
             ]
           }, {
-            text: "What is the result of : (true + false) > 2 + true; ?",
+            question: "What is the result of : (true + false) > 2 + true; ?",
             id: 2,
             points: 300,
             responses: [
@@ -42,7 +42,7 @@ let app = new Vue({
               {text: 'Null', answer: false},
             ]
           }, {
-            text: "What is the result of : NaN === Nan ?",
+            question: "What is the result of : NaN === Nan ?",
             id: 3,
             points: 400,
             responses: [
@@ -54,7 +54,7 @@ let app = new Vue({
               {text: 'Null', answer: false},
             ]
           }, {
-            text: "What is a 'closure' in JavaScript?",
+            question: "What is a 'closure' in JavaScript?",
             id: 4,
             points: 500,
             responses: [
@@ -64,7 +64,7 @@ let app = new Vue({
               {text: 'A closure is the combination of a function and the lexical environment within which that function was declared.', answer: true}
             ]
           }, {
-            text: "Javascript is which side language?",
+            question: "Javascript is which side language?",
             id: 5,
             points: 600,
             responses: [
@@ -75,7 +75,7 @@ let app = new Vue({
               {text: 'Dark side.', answer: false}
             ]
           }, {
-            text: "Which of the following statements returns false?",
+            question: "Which of the following statements returns false?",
             id: 6,
             points: 700,
             responses: [
@@ -86,7 +86,7 @@ let app = new Vue({
               {text: '20%6 === 2', answer: false}
             ]
           }, {
-            text: "How to empty an array in JavaScript?",
+            question: "How to empty an array in JavaScript?",
             id: 7,
             points: 800,
             responses: [
@@ -96,7 +96,7 @@ let app = new Vue({
               {text: 'while(arrayList.length){ arrayList.pop(); }', answer: false},
             ]
           }, {
-            text: "What is the standard way to create an object prototype?",
+            question: "What is the standard way to create an object prototype?",
             id: 8,
             points: 900,
             responses: [
@@ -107,7 +107,7 @@ let app = new Vue({
               {text: 'None of the above.', answer: false},
             ]
           }, {
-            text: "The this keyword gets automatically defined in the scope of every function and it’s binding happens in three main ways. What are they?",
+            question: "The this keyword gets automatically defined in the scope of every function and it’s binding happens in three main ways. What are they?",
             id: 9,
             points: 1000,
             responses: [
@@ -121,30 +121,30 @@ let app = new Vue({
     },
     methods: {
         checkTrue: function(questionIndex, index) {
-        	this.selected = this.questions[questionIndex].responses[index].answer;
+          this.selected = this.questions[questionIndex].responses[index].answer;
         },
         checkAnswer: function() {
-        	if(this.selected === true) {
-        		this.questionIndex++;
-        		return this.selected = "";
-        	} 
-        	else if(this.selected === "") {
-        		return this.questionIndex;
-        	}
-        	else {
-        		this.selected = 'pooper';
-        	}
+          if(this.selected === true) {
+            this.questionIndex++;
+            return this.selected = "";
+          } 
+          else if(this.selected === "") {
+            return this.questionIndex;
+          }
+          else {
+            this.selected = 'pooper';
+          }
         },
         tryAgain: function() {
-        	const resultText = document.querySelector(".card-text");
+          const resultText = document.querySelector(".card-text");
 
-        	resultText.innerHTML = "";
-        	return this.selected = "", this.questionIndex = 0;
+          resultText.innerHTML = "";
+          return this.selected = "", this.questionIndex = 0;
         },
         showResult: function() {
-        	const resultText = document.querySelector(".card-text");
-        	
-        	return resultText.innerHTML = `You have collected <span id="seeMe">${this.questionIndex*100}</span> points!`;
+          const resultText = document.querySelector(".card-text");
+          
+          return resultText.innerHTML = `You have collected <span id="seeMe">${this.questionIndex*100}</span> points!`;
         }
     },
     components: {
