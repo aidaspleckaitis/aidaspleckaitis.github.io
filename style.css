@@ -1,0 +1,133 @@
+body {
+	font-family: 'Rubik', sans-serif;
+}
+/* Answer list ----------*/
+.list-group-item:focus, .list-group-item:hover {
+	background: #ccc1a3;
+	color: white;
+}
+h6 {
+   font-size: 1.3rem;
+   bottom: 10px;
+   position: relative;
+}
+
+/* Win - Lose Modal ---------------------*/
+.card {
+	width: 450px;
+	margin-top: 50px;
+}
+/* Lose Modal ---------------------------*/
+	.card-title{
+		color: #ffee93;
+	}
+	.btn:not([disabled]):not(.disabled) {
+		opacity: 0.9;
+	}
+	.card-text {
+		color: #ffee93;
+		font-size: xx-large;
+	}
+	#seeMe {
+		background-color: #3e4a54;
+    	border: 1px solid #3e4a54;
+    	border-radius: 12px;
+    	padding: 1px 10px;
+	}
+/* Win Modal ---------------------------*/
+.winner .card-title, .card-text {
+	color: #e00000;
+	font-size: xx-large;
+}
+
+/* Alignment -----------------*/
+.first-col {
+	margin-top: 55px;
+}
+.second-col {
+	margin-top: 50px;
+}
+.centerize {
+	display: flex;
+	justify-content: center;
+}
+h1:first-child {
+	color: #3b3b3b;
+    font-size: 60px;
+    margin-bottom: 108px;
+}
+	@media (max-width: 989px) {
+		h1:first-child {
+			display: flex;
+			justify-content: center;
+			font-size: 30px;
+    		margin-bottom: 34px;
+		}
+		h6 {
+			font-size: 14px;
+		}
+	}
+
+/* Submit button -------------------*/
+.submitButton {
+	background-color: #cc3b38;
+	border: 0 none;
+	margin-top: 20px;
+}
+	.submitButton:hover {
+		background-color: #c71b1b;
+	}
+
+/* Points -------------------*/
+.pointsSpan {
+	border: 1px solid;
+    border-radius: 4px;
+    box-shadow: 2px 5px 10px #e4e4e4;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    padding: 10px 10px;
+    width: 160px;
+}	
+	.answered {
+		background-color: #398899;
+		border-color: #398899;
+		color: white;
+	}
+	.unAnswered {
+		background-color: white;
+		border-color: #c7bca7;
+		color: #161616;
+	}
+
+/* Effects -----------------------------------*/
+/* Pulse */
+.pulsate {
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.5;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
+    }
+}
+/* Fade-In */
+@keyframes fadeIn {
+  		to {
+    		opacity: 1;
+  		}
+	}
+	.fade-in {
+  		opacity: 0;
+  		animation: fadeIn .5s ease-in 1 forwards;
+	}
+
