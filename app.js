@@ -47,9 +47,9 @@ let app = new Vue({
             points: 400,
             responses: [
               {text: 'True', answer: false}, 
-              {text: 'ReferenceError', answer: false},
+              {text: 'ReferenceError', answer: true},
               {text: 'TypeError', answer: false},
-              {text: 'False', answer: true},
+              {text: 'False', answer: false},
               {text: 'NaN', answer: false},
               {text: 'Null', answer: false},
             ]
