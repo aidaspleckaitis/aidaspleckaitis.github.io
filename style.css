@@ -2,19 +2,24 @@ body {
 	font-family: 'Source Sans Pro', 'Times New Roman', sans-serif;
 }
 .container	{
+	-js-display: flex;
 	display: flex;
 }
 
 /* ======================================
 	HEADER
    =================================== */
+/* flex */
+header, nav, .sub_menu, .dropdown_content ul {
+	-js-display: flex;
+	display: flex;
+}
 .responsive_dropdown {
 	display: none;
 }
 header	{
 	align-items: flex-end;
 	background-color: #cc0066;
-	display: flex;
 	flex-direction: row;
 	height: 117px;
 	justify-content: space-around;
@@ -39,7 +44,6 @@ header	{
 
 /* NAVIGATION Bar*/
 nav {
-	display: flex;
 	flex-direction: column;
 }
 .main_menu {
@@ -53,7 +57,6 @@ nav {
 		color: #333333;
 	}
 .sub_menu {
-	display: flex;
     justify-content: flex-end;
     font-size: 14px;
 }
@@ -85,7 +88,6 @@ ul .dropdown {
 	position: absolute;
 }
 	.dropdown_content ul {
-		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		margin: 0;
