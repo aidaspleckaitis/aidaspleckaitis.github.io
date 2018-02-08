@@ -6,8 +6,13 @@
     	padding: 0;
     }
     header {
-    	flex-direction: column;
-    	align-items: center;
+    	-webkit-box-orient: vertical;
+    	-webkit-box-direction: normal;
+    	    -ms-flex-direction: column;
+    	        flex-direction: column;
+    	-webkit-box-align: center;
+    	    -ms-flex-align: center;
+    	        align-items: center;
     }
     header h1 {
     	font-size: 35px;
@@ -22,7 +27,9 @@
 /* MOBILE layout */
 @media only screen and (max-width: 491px) {
 	header {
-		align-items: flex-start;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
 	}
 	header h1 {
 		margin: 11px auto 0 auto;
@@ -44,5 +51,3 @@
 		width: 100%;
 	}
 }
-
-
