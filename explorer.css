@@ -1,0 +1,162 @@
+body {
+	font-family: 'Source Sans Pro', 'Times New Roman', sans-serif;
+}
+.container	{
+
+}
+
+/* ======================================
+	HEADER
+   =================================== */
+/* flex */
+header, nav, .sub_menu, .dropdown_content ul {
+	
+}
+.responsive_dropdown {
+	display: none;
+}
+header	{
+	position: relative;
+	background-color: #cc0066;
+	height: 117px;
+	width: 100%;
+}
+	header h1 {
+		position: absolute;
+	    bottom: 6px;
+	    left: 120px;
+	    display: inline-block;
+		color: #ffcccc;
+		font-size: 59.63px;
+		font-weight: 700;
+		margin: 0;
+	}
+	header ul {
+
+	}
+	header ul li {
+		display: inline-block;
+		padding-left: 20px;
+	}
+	header ul li a {
+		text-decoration: none;
+	}
+
+/* NAVIGATION Bar*/
+nav {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.main_menu {
+	font-size: 20px;
+	margin-right: 120px;
+	margin-top: 47px;
+}
+	.main_menu li a {
+		color: white;
+		padding: 11px 0;
+	}
+	.main_menu li a:hover {
+		color: #333333;
+	}
+.sub_menu {
+    font-size: 14px;
+    margin-left: 160px;
+}
+	.sub_menu li a {
+		color: black;
+	}
+
+/* Dropdown table */
+
+.arrow_up {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #4d4d4d;
+    margin-top: -15px;
+    margin-left: 65px;
+    position: absolute;
+}
+ul .dropdown {
+	padding: 0;
+}
+.dropdown_content {
+	display: ;
+	background-color: #4d4d4d;
+    font-size: 12px;
+    position: absolute;
+    left: 5px;
+    top: 117px;
+}
+	.dropdown_content ul {
+		padding: 0;
+		width: 175px;
+	}
+	.dropdown_content li {
+		padding: 10px 0 10px 0;
+		width: 100%;
+	}
+	.dropdown_content li:hover {
+		background-color: #666666;
+	}
+	.dropdown_content li a:hover {
+		color: white;
+	}
+	.dropdown_content li a {
+		padding-left: 5px;
+	}
+
+.dropdown:hover .dropdown_content {
+	display: block;
+}
+
+/* RESPONSIVE LAYOUT
+=====================================*/
+
+@media only screen and (max-width: 888px) {
+	.arrow_up {
+		left: -64px;
+	}
+	nav {
+		position: static;
+		margin-top: 20px;
+	}
+	.sub_menu {
+    	display: none;
+    }
+    .main_menu {
+	    padding: 0;
+	    margin: 0;
+	}
+    header {
+    	text-align: center;
+    }
+    header h1 {
+    	position: static; 
+    	font-size: 35px;
+    	margin-top: 15px;
+    }
+    .dropdown_content {
+    	left: 0;
+    	width: 100%;
+    }
+    .dropdown_content ul {
+		text-align: start;
+	    width: 100%;
+	    text-transform: uppercase;
+	    font-size: 15px;
+	}
+	.dropdown_content li a {
+    	padding-left: 36px;
+	}
+}
+
+/* MOBILE layout */
+@media only screen and (max-width: 439px) {
+	.main_menu {
+		font-size: 17px;
+	}
+}
