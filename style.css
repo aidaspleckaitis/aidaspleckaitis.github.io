@@ -30,7 +30,7 @@ header	{
 	        flex-direction: row;
 	height: 117px;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+		justify-content: space-around;
 	width: 100%;
 }
 	header h1 {
@@ -94,7 +94,7 @@ ul .dropdown {
 }
 .dropdown_content {
 	background-color: #4d4d4d;
-	display: none;
+	display: ;
 	font-size: 12px;
 	margin-left: -34px;
     margin-top: 20px;
