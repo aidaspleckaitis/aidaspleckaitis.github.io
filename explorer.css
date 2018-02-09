@@ -1,20 +1,11 @@
 body {
 	font-family: 'Source Sans Pro', 'Times New Roman', sans-serif;
 }
-.container	{
-
-}
 
 /* ======================================
 	HEADER
    =================================== */
-/* flex */
-header, nav, .sub_menu, .dropdown_content ul {
-	
-}
-.responsive_dropdown {
-	display: none;
-}
+
 header	{
 	position: relative;
 	background-color: #cc0066;
@@ -84,7 +75,7 @@ ul .dropdown {
 	padding: 0;
 }
 .dropdown_content {
-	display: ;
+	display: none;
 	background-color: #4d4d4d;
     font-size: 12px;
     position: absolute;

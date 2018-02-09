@@ -1,23 +1,15 @@
 body {
 	font-family: 'Source Sans Pro', 'Times New Roman', sans-serif;
 }
-.container	{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}
 
 /* ======================================
 	HEADER
    =================================== */
-/* flex */
+
 header, nav, .sub_menu, .dropdown_content ul {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-}
-.responsive_dropdown {
-	display: none;
 }
 header	{
 	-webkit-box-align: end;
