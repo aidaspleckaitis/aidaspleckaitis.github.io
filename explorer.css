@@ -352,6 +352,9 @@ footer .line:nth-child(2) h2 {
 		width: 100%;
 		float: none;
 	}
+	main article {
+		height: auto;
+	}
 	main article h2 {
 		text-align: center;
 	}
@@ -362,7 +365,7 @@ footer .line:nth-child(2) h2 {
 	/*ASIDE*/
     .four_aside {
 		width: 50%;
-		margin: 0;
+		margin: 18px 0 0 0;
 		padding-bottom: 25px;
 	}
 	/*GREY_SECTION*/
@@ -375,8 +378,13 @@ footer .line:nth-child(2) h2 {
 	    height: auto;
 	}
 	#grey_section p {
+		padding: 15px 23px;
 		width: 100%;
 	}
+	/*FOOTER*/
+	footer .line:nth-child(2) p {
+	font-size: 10px;
+    }
 }
 @media only screen and (max-width: 814px) {
 	/*HEADER*/
@@ -425,7 +433,7 @@ footer .line:nth-child(2) h2 {
     /*ASIDE*/
     .four_aside {
 		width: 50%;
-		margin: 0 0 0 6px;
+		margin: 19px 0 0 6px;
 		padding-bottom: 25px;
 	}
 	/*FOOTER*/
@@ -457,6 +465,9 @@ footer .line:nth-child(2) h2 {
 	    font-size: 15px;
 	}
 	/*MAIN*/
+	main article h2 {
+	    font-size: 24px;
+	}
 	aside h3 {
 		text-align: center;
 	}
@@ -484,6 +495,19 @@ footer .line:nth-child(2) h2 {
 	}
 	footer ul span {
    		padding: 0 0 0 3px;
+	}
+}
+@media only screen and (max-width: 482px) {
+	.six {
+		margin-left: 0;
+		width: 100%;
+        float: none; 
+	}
+	#bottom_first_section {
+		margin-bottom: 0;
+	}
+	#bottom_second_section {
+		margin: 25px 0 25px 0;
 	}
 }
 @media only screen and (max-width: 439px) {
