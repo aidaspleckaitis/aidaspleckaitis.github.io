@@ -196,18 +196,19 @@ aside p {
 }
 /*FORM*/
 form {
+	position: relative;
 	margin-top: 25px;
 }
 form fieldset {
 	padding: 21px 20px 21px 20px;
 }
-input[name=firstname], input[name=lastname], textarea {
+#firstname, #lastname, textarea {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	margin-top: 10px;
     width: 100%;
 }
-input[name='firstname'], input[name='lastname'] {
+#firstname, #lastname {
 	height: 31px;
 }
 input[type="submit"] {
@@ -222,7 +223,6 @@ input[type="submit"] {
 /*FORM ALERTS*/
 .nameMessage, .lastNameMessage, .textMessage {
 	margin: 0;
-	position: absolute;
 }
 .lastNameMessage {
 
