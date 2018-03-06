@@ -214,24 +214,24 @@ nav ul li:hover {
 	overflow: hidden;
 }
 a.gmail_button {
-	background: white url(contact-icons/gmail.png) no-repeat 25px center;
+	background: white url(contactIcons/gmail.png) no-repeat 25px center;
 	background-size: 30px;
     color: #0029ff;
     padding: 12px 75px;
     max-width: 240px;
 }
 a.facebook_button {
-	background: #38579a url(contact-icons/facebook.png) no-repeat -4px -2px;
+	background: #38579a url(contactIcons/facebook.png) no-repeat -4px -2px;
     background-size: 45px;
     color: white;
 }
 a.github_button {
-	background: white url(contact-icons/github.png) no-repeat 10px 7px;
+	background: white url(contactIcons/github.png) no-repeat 10px 7px;
     background-size: 27px;
     color: black;
 }
 a.linkedin_button {
-	background: #1274aa url(contact-icons/linkedin.png) no-repeat 10px 6px;
+	background: #1274aa url(contactIcons/linkedin.png) no-repeat 10px 6px;
 	background-size: 27px;
     color: white;
 }
