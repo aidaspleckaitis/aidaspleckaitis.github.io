@@ -2,7 +2,7 @@
 	RESPONSIVE LAYOUT
 =====================================*/
 
-@media only screen and (max-width: 1007px) {
+@media only screen and (max-width: 1031px) {
 	/*ARTICLE*/
 	.eight {
 		width: 100%;
@@ -40,18 +40,18 @@
 	font-size: 10px;
     }
 }
-@media only screen and (max-width: 814px) {
+@media only screen and (max-width: 841px) {
 	/*HEADER*/
 	.container:first-child {
 		text-align: center;
 		width: 100%;
 	}
-	header h1 {
+	.main_header h1 {
 		display: block;
 		font-size: 45px;
 		margin: 0;
 	}
-	nav {
+	.main_header nav {
 		float: none;
 	}
 	.sub_menu {
@@ -91,22 +91,24 @@
 		padding-bottom: 25px;
 	}
 	/*FOOTER*/
-	.nine p {
+	footer p {
 		display: none;
 	}
 	footer {
 		text-align: center;
 	}
-	footer .container, .three {
+	footer ul {
+		margin-top: 0;
+		padding-top: 20px;
+	}
+	footer .container, footer .two {
 		width: 100%;
 	}
-	footer .line:nth-child(2) h2 {
+	footer .two {
 		margin: 0;
-		float: none;
-		margin: 5px 0 0 0;
 	}
-	.three {
-		margin: 0;
+	footer h2 {
+		float: none;
 	}
 }
 @media only screen and (max-width: 560px) {
@@ -149,6 +151,9 @@
 	}
 	footer ul span {
    		padding: 0 0 0 3px;
+	}
+	footer h2 {
+		padding-top: 5px;
 	}
 }
 @media only screen and (max-width: 482px) {

@@ -69,8 +69,6 @@
 .line, .row_grey {
 	width: 100%;
 	clear: both;
-	padding: 0px;
-	margin: 0px;
 }
 
 /* ======================================
@@ -86,12 +84,12 @@ body {
 	HEADER
    =================================== */
 
-header	{
+.main_header {
 	background-color: #cc0066;
 	height: 117px;
 	width: 100%;
 }
-	header h1 {
+	.main_header h1 {
 	    display: inline-block;
 	    color: #ffcccc;
 	    font-size: 66px;
@@ -99,17 +97,17 @@ header	{
 	    margin: 0;
 	    margin-top: 33px;
 	}
-	header ul li {
-		display: inline-block;
-		padding-left: 20px;
-	}
-	header ul li a {
+	.main_header ul li a {
 		text-decoration: none;
 	}
 /* NAVIGATION Bar*/
-nav {
+.main_header nav {
 	float: right;
 }
+.sub_menu li, .main_menu li {
+	display: inline-block;
+	padding-left: 20px;
+	}
 .main_menu {
 	font-size: 22px;
     margin: 76px 0 0 0;
@@ -224,12 +222,6 @@ input[type="submit"] {
 .nameMessage, .lastNameMessage, .textMessage {
 	margin: 0;
 }
-.lastNameMessage {
-
-}
-.textMessage {
-
-}
 
 /* ======================================
 	MAIN & ARTICLE
@@ -242,7 +234,7 @@ main {
 	line-height: 20px;
 	width: 100%;
 }
-main article {
+main article .eight {
     height: 730px;
 }
 #main_section {
@@ -285,6 +277,9 @@ main article h2 {
     padding: 20px 23px;
     margin-top: 25px;
 }
+#bottom_second_section nav {
+	float: none;
+}
 #bottom_second_section h3 {
 	font-family: 'Times New Roman';
 	font-size: 23px;
@@ -324,19 +319,22 @@ footer {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	height: 118px;
-}
-footer .line:first-child {
-	color: white;
 	margin-top: 20px;
-	padding: 22px 0 20px 0;
+}
+footer nav, footer ul, footer ul li, footer ul a, footer p, footer header, footer h2 {
+	padding: 0;
+	margin: 0;
+}
+footer nav  {
+	color: white;
 }
 footer ul {
 	list-style: none;
+    margin-bottom: 30px;
+    padding-top: 25px;
 }
-
 footer ul li {
 	display: inline-block;
-	padding: 0;
 }
 footer ul a {
 	color: white;
@@ -345,13 +343,11 @@ footer ul a {
 footer ul span {
 	padding: 0 10px 0 10px;
 }
-footer .line:nth-child(2) p {
+footer p {
 	color: #999999;
 	font-size: 12px;
-	margin: 0;
 }
-footer .line:nth-child(2) h2 {
-	margin: 11px 0 0 0;
+footer h2 {
     font-size: 31.15px;
     float: right;
     color: white;
