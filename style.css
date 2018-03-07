@@ -6,6 +6,7 @@ body {
 	background-size: cover;
 	color: #221e22;
 	font-family: "Montserrat", "Open Sans", Arial, Sans-serif;
+	height: 100%;
 }
 .container {
 	width: 90%;
@@ -16,20 +17,9 @@ body {
 }
 
 /* =============================
-	HEADER
+	Navigation
 ============================= */
 
-h1 {
-	display: inline-block;
-    width: 35%;
-    font-size: 60px;
-    line-height: 40px;
-    margin: 25px 0 0 25px;
-}
-h1 span {
-	margin-left: 76px;
-
-}
 nav {
 	background-color: rgba(101, 112, 126, 0.25);
     display: flex;
@@ -188,6 +178,77 @@ nav ul li:hover {
 }
 
 /* =======================================
+	Info Bar
+======================================= */
+
+h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+    text-transform: lowercase;
+}
+#infoBar {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	top: 0;
+}
+#infoBar a {
+	display: block;
+    height: 100%;
+}
+#infoBar ul {
+	list-style: none;
+	display: inherit;
+	margin: 0;
+    padding: 0;
+}
+#infoBar li {
+	position: relative;
+	height: 50px;
+	width: 50px;
+	-webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+	#infoBar li:hover {
+		height: 80px;
+	}
+#infoBar img {
+	position: absolute;
+	bottom: 0;
+    margin-bottom: 5px;
+}
+#facebook_bar img, #github_bar img, #cv_bar img {
+	width: 35px;
+}
+#linked_bar {
+	background-color: #1274aa;
+}
+	#linked_bar img {
+		width: 40px;
+		margin: 0 0 4px 6px;
+	}
+#facebook_bar {
+	background-color: #38579a;
+}
+	#facebook_bar img {
+    	margin: 0 0 10px 3px;
+	}
+#github_bar {
+	background-color: white;
+}
+	#github_bar img {
+		margin: 0 0 8px 7px;
+	}
+#cv_bar {
+	background-color: white;
+}
+	#cv_bar img {
+		margin: 0 0 8px 7px;
+	}
+/* =======================================
 	Buttons
 ======================================= */
 
@@ -305,6 +366,7 @@ a.gmail_button:hover, a.github_button:hover {
 	.container {
 		width: 98%;
 	}
+	/*Navigation*/
 	nav {
 	    text-align: center;
 	    margin-bottom: 30px;
@@ -329,7 +391,25 @@ a.gmail_button:hover, a.github_button:hover {
 	#work_section h2 {
 	    padding-bottom: 25px;
 	}
+	/*Info Bar*/
+	#infoBar {
+		top: unset;
+		bottom: 0;
+		clear: both;
+	}
+	#infoBar img {
+		right: 5px;
+	}
+	#infoBar li {
+		-webkit-transition: width 0.5s;
+    	transition: width 0.5s;
+	}
+	#infoBar li:hover {
+		height: unset;
+		width: 80px;
+	}
 }
+/*From 766px to 1021px clear project info for better responsiveness*/
 @media (min-width: 766px) and (max-width: 1021px) {
 	.project_info {
 		clear: left;
@@ -343,8 +423,17 @@ a.gmail_button:hover, a.github_button:hover {
 		clear: left;
 	}
 }
+/*hide info bar*/
+@media (max-height: 560px) {
+	#infoBar {
+		display: none;
+	}
+}
 @media (max-width: 485px) {
 	nav ul {
 		font-size: 15px;
+	}
+	#infoBar {
+		display: none;
 	}
 }
