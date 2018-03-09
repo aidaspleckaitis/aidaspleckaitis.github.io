@@ -1,12 +1,11 @@
 body {
-	background: url(background.jpg) no-repeat center center fixed; 
+	background: url(background.jpg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	color: #221e22;
 	font-family: "Montserrat", "Open Sans", Arial, Sans-serif;
-	height: 100%;
 }
 .container {
 	width: 90%;
@@ -353,7 +352,7 @@ a.gmail_button:hover, a.github_button:hover {
 	    margin-top: auto;
 	    margin-bottom: auto;
 	}
-	.container {
+	.body {
 		overflow: hidden;
 	}
 }
