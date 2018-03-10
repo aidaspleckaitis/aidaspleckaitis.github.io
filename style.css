@@ -1,5 +1,5 @@
 body {
-	background: url(background.jpg) no-repeat center center; 
+	background: url(background.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -373,7 +373,6 @@ a.gmail_button:hover, a.github_button:hover {
 	    width: 100%;
 	}
 	nav ul {
-		background-color: null;
 	    font-size: 20px;
 	    padding: 5px 0;
 	    margin: 0;
@@ -432,8 +431,5 @@ a.gmail_button:hover, a.github_button:hover {
 @media (max-width: 485px) {
 	nav ul {
 		font-size: 15px;
-	}
-	#infoBar {
-		display: none;
 	}
 }
