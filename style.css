@@ -5,6 +5,7 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	color: #221e22;
+	height: 100vh;
 	font-family: "Montserrat", "Open Sans", Arial, Sans-serif;
 }
 .container {
@@ -352,7 +353,7 @@ a.gmail_button:hover, a.github_button:hover {
 	    margin-top: auto;
 	    margin-bottom: auto;
 	}
-	.body {
+	.container {
 		overflow: hidden;
 	}
 }
